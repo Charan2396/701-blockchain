@@ -1,3 +1,14 @@
+import Web3 from 'web3'
+
+export function setProvider() =>{
+  
+  if (window.ethereum) 
+  {
+    const ethereum = window.ethereum
+    const web3Provider = new Web3(ethereum)
+  }
+}
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
